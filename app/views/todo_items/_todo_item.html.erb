@@ -2,3 +2,6 @@
 
 
 <%= button_to "Delete", todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete %>
+
+
+<%= link_to "Mark as Complete" , complete_todo_list_todo_item_path(@todo_list, todo_item.id), method: :patch %>
